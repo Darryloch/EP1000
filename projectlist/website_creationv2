@@ -1,0 +1,48 @@
+<html>
+    <p>
+        To create my own website, I generally followed Jake Wright's youtube guides on HTML and CSS and only edited some parts to suit my own preferances. 
+        Thus, my website will look very similar to his example.<br>
+        <br>
+        <a href="https://www.youtube.com/c/JakewrightNet">Jake Wright's youtube channel</a>
+    </p>
+
+    <h2>Writing in HTML</h2>
+    <p>
+        Among my files, I have my three main pages, the index, about and projects page, in the main folder and everything else sorted into sub-folders, such 
+        as an images folder and another folder that contains all the dedicated documentation pages for each project I have done. For every different content
+        in my website, there will be a new file and page created, and pages with similar content are categorised to keep things organised and easy to understand<br>
+        <br>
+        Below will explain the layout of my website pages and some of the HTML functions used to create it.
+    </p>
+
+    <h3>Home/Index page</h3>
+    <p>
+        As seen from the home page, I decided to keep it simple and minimal since there will not be much content there. Any significant content will be placed 
+        and organised in other parts of the website.<br>
+        <br>
+        At the end, I wanted to centralise everything in the homee page so I wrote as if it were and would later shift and organise with CSS.<br>
+        I used a table to list out items in my navigation bar horizontally and later used CSS to space them out.<br>
+        I decided on a simple page header, "HOME", and added bars to both sides to fill up the page, and gave a simple and straightforward introduction to 
+        the use of the website below the header.<br>
+        I also decided to display my EP1000 certifications on the home page, such as the passing of the lab safety and 3D printing online test, so that it 
+        can be easily seen for the module assessment. This may be later changed after completion of the module.
+    </p>
+
+    <h3>About page</h3>
+    <p>
+        In my about page, I put a profile picture and used a table function to wrap text containing some basic personal details to the side of it, similar
+        to an IC card or personal details part of a passport. I chose to do this as it was simple, straighforward and easy to understand.<br>
+        <br>
+        Below that I put a thin line across the page to seperate the rest of the about page that will provide further introduction to myself, such as
+        the breif write-up and some interests.
+    </p>
+
+    <h3>Projects page</h3>
+    <p>
+        I decided that my main projects page will just list out most projects that I have done or will be doing, as well as provide links to the dedicated
+        documentation page. So I put a page header and a very short introduction to the page at the top, and use a list to provide links to the documentation
+        page. The page is sorted with headers and seperate list functions according to methods used or type of projects.
+    </p>
+
+
+</html>
