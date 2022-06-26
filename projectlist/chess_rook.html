@@ -125,8 +125,43 @@
                     Repeat for the top face of the chesspiece, setting the distance to 10mm depth and 15mm diameter.
                 </p>
                 <br>
-                <h3>Extrude cuts to finish the crown</h3>
+                <h3>Finishing the crown</h3>
                 <img src="https://darryloch.github.io/EP1000/images/rook/rook_offset_plane.png" alt="rook offset plane" height="250">
+                <p>
+                    Select the offset plane tool and select the plane you did the first sketch on.Set the offset distance to 15mm and click ok to create an
+                    offset workplane.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_sketch2.png" alt="rook 2nd sketch" height="250">
+                <p>
+                    Create a new sketch on the new workplane.<br>
+                    Draw a 50mm vertical line from the origin.<br>
+                    Create a new rectangle, dimensioning it to 3mm width and 6mm height.<br>
+                    Using the midpoint constraint tool, select the top side of the rectangle and then select the top end of the vertical line.<br>
+                    <br>
+                    Once the sketch is fully constrained, click finish sketch.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_extrude_cut.png" alt="rook extrude cut" height="250">
+                <p>
+                    Select the extrude tool and slect the rectangle from the new sketch.<br>
+                    Change the operation to cut and extent type to all.<br>
+                    If the cut is not going in the right direction, flip the direction of the cut so it cuts across the top of the rook chesspiece.<br>
+                    Click ok to finish the cut.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_circular_array.png" alt="rook circular array" height="250">
+                <p>
+                    Create a circular array, change the type to "features", and select the extrude cut that was just done.<br>
+                    Select the axis that is vertical / longitudinal with respect to the chesspiece.<br>
+                    Set quantity to 3 and angular spacing to full.<br>
+                    Click ok to finish the operation
+                </p>
+                <br>
+                <p>
+                    You should now have a completed model of a rook chesspiece.<br>
+                    <b>This is the end of the documentation.</b>
+                </p>
             </div>
         </div>
         <div id="footer">
