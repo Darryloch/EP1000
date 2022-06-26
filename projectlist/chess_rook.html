@@ -44,13 +44,26 @@
                     Draw a vertical line from the origin across the whole chesspiece, making sure to extend past the chesspiece slightly.<br>
                     Right-click the line and convert it into a centerline.
                 </p>
-
-                <h4>Base</h4>
-                <img src="https://darryloch.github.io/EP1000/images/rook/rook_base.png" alt="crook base" height="250">
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_base.png" alt="rook base" height="250">
                 <p>
                     From the origin, draw a rectangle of 15mm length and 5mm height.<br>
                     Then, draw a left slanted line from the top right coerner of the rectangle with angle 50&#176; from the recrangle.<br>
                     Set the height of the slanted line to be 2.5mm from the top of the rectangle to the top end of the line.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_base_spline.png" alt="rook base spline curve" height="250">
+                <p>
+                    Using a control point spline, start the curve at the end of the slanted line created earlier, enter a second point somewhere in the middle 
+                    of the template line, and enter a final point at the end of the curve on the template. Once done, you should get a recurve shape with 2 
+                    control points.
+                    <br>
+                    With the dimensioning tool, set the first control point to be 5.5mm above and 1.5mm to the right of the start of the spline.<br>
+                    Set the second control point to be 3.5mm below and 0.5mm to the right of the end point of the spline.<br>
+                    Set the horizontal length between the 2 control points to be 4.4mm.<br>
+                    <br>
+                    From the end of the spline, draw a horzontal line to the centerline, and with the dimensioning tool, set the height from the top of the 
+                    rectangle to the horizontal line to be 10.5mm.
                 </p>
 
             </div>
