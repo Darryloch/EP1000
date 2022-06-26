@@ -61,7 +61,8 @@
                     to the use of the website below the header is put right below.<br>
                     <br>
                     I also decided to display my EP1000 certifications on the home page, such as the passing of the lab safety and 3D printing online test, so that it 
-                    can be easily seen for the module assessment. This may be later changed after completion of the module.
+                    can be easily seen for the module assessment. This may be later changed after completion of the module. 
+                    For now, I added a h3 header, "Certifications", and inserted images of the EP1000 certifications below it.
                 </p>
             
                 <h3>About page</h3>
@@ -88,8 +89,8 @@
                     a white background. CSS allowed me to set a border for different text bodies, shift text bodies to different parts of the pages, change background colours. 
                     I could also further edit the look of the page content, such as text alignment, font type, font colour and font size.<br>
                     <br>
-                    Since all pages in my website follows the same layout except for the home page, I created two CSS text files: one for the home page, and 
-                    a second one for everything else. Reusing one file for multiple pages allows me to keep my website layout consistent.
+                    Since all pages in my website follows the same layout except for the home page, I created two CSS text files: one, "stylehome.css", for the home page, 
+                    and a second one, "style.css" for everything else. Reusing one file for multiple pages allows me to keep my website layout consistent.
                 </p>
 
                 <h3>Editing the HTML files</h3>
@@ -106,6 +107,11 @@
                         <li>&lt;div id="main"&gt;      which contains the main contents of the page</li>
                         <li>&lt;div id="footer"&gt;    which contains the website footer, which contains a copyright claim following Jake Wright's example</li>
                     </ul>
+                    <br>
+                    Then, to link the CSS files into the HTML files, a command is written into the HTML file.<br>
+                    The command is &lt;link rel="stylesheet" type="text/css" href="(insert name of CSS file)" /&gt;.<br>
+                    For the home page, the command is written within the &lt;head&gt; command, where the title is located.<br>
+                    For the other pages, it is written on top of everything but within the &lt;html&gt; command.
                 </p>
 
                 <h3>Style sheet for most of the pages</h3>
@@ -113,11 +119,13 @@
                     I did the CSS file for the rest of the pages first, since that was directly following Jake Wright's guide. The result is almost identical
                     to Jake Wright's example, with only the colours and some padding or spacing changed to my preferences.<br>
                     <br>
-                    <h4>#background</h4>
-                    The background colour of the website is set to grey of hex code #666666
+                    <h4>#a</h4>
+                    The text decoration is set to none to remove any underline that may appear on links.
+                    <br>
+                    <h4>#body</h4>
+                    The background colour of the website is set to grey of hex code #666666<br>
                     <br>
                     <h4>#container</h4>
-                    I started with the container, which holds all of my website content.<br>
                     The width is set to 1024 pixels.<br>
                     The colour is set to a light grey with hex code #eeeeee.<br>
                     Lastly, margin-left and margin-right is added and set to auto to put it in the middle of the browser.<br>
@@ -164,10 +172,15 @@
                     I then made the font size larger using "font-size: larger;"<br>
                     Padding stays the same.<br>
                     <br>
-
-                    I then added a "#nav table", to edit the navigation bar.
                     <h4>#nav table</h4>
-
+                    I then added a "#nav table", to edit table used in the the navigation bar.<br>
+                    <br>
+                    The width is set to 600 pixels.<br>
+                    The font size is increased using the command "font-size: larger;"<br>
+                    Margin left and margin right is set to auto to centralise the table<br>
+                    <br>
+                    <br>
+                    The rest of the CSS file remains exactly the same as the first one created earlier.
                 </p>
 
 
