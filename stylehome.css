@@ -15,7 +15,7 @@ a{
 
 #header{
     background-color: #A4E4CE;
-    color: #fefefe;
+    color: white;
     text-align: center;
     padding: 10px;
 }
@@ -23,13 +23,12 @@ a{
 #content{
     text-align: center;
     font-size: larger;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 20px 20px;
 }
 
 
 #nav table{
     width: 600px;
-    text-align: center;
     font-size: larger;
     margin-left: auto;
     margin-right: auto;
