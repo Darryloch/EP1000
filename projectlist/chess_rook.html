@@ -54,21 +54,56 @@
                 <br>
                 <img src="https://darryloch.github.io/EP1000/images/rook/rook_base_spline.png" alt="rook base spline curve" height="250">
                 <p>
-                    Using a control point spline, start the curve at the end of the slanted line created earlier, enter a second point somewhere in the middle 
-                    of the template line, and enter a final point at the end of the curve on the template. Once done, you should get a recurve shape with 2 
-                    control points.
+                    Create a control point spline, starting the curve at the end of the slanted line created earlier, enter a control point to the right
+                    of the template line, and enter a second control point to the left of the template curve, and enter a final point and the end of the 
+                    template curve. Once done, you should get a recurve shape with 2 control points.<br>
                     <br>
                     With the dimensioning tool, set the first control point to be 5.5mm above and 1.5mm to the right of the start of the spline.<br>
                     Set the second control point to be 3.5mm below and 0.25mm to the right of the end point of the spline.<br>
                     Set the horizontal length between the 2 control points to be 4.65mm.<br>
                     <br>
                     From the end of the spline, draw a horzontal line to the centerline, and with the dimensioning tool, set the height from the top of the 
-                    rectangle to the horizontal line to be 10.5mm.
+                    base rectangle to the horizontal line to be 10.5mm.
                 </p>
                 <br>
                 <img src="https://darryloch.github.io/EP1000/images/rook/rook_arc_curve.png" alt="rook arc curve" height="250">
                 <p>
-
+                    Create a rectangle, starting from the intersection of the horizontal line made previously and the centerline, and drag right.<br> 
+                    Use the coincident constrain tool to fix the bottom right corner of the rectangle to the end of the spline made previously.<br>
+                    With the dimensioning tool, set the rectangle height to 2mm.<br>
+                    <br>
+                    Create a 3 point arc, starting the arc at the end of the spline, enter the second point along the top of the rectangle that was just made, 
+                    and adjust the arc such that it is tangent to the rectangle.<br>
+                    With the dimensioning tool, set the distance between the end point of the arc and the top right corner of the rectangle to be 1.6mm.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_long_curve.png" alt="rook long curve" width="300">
+                <p>
+                    To create the long curve, create a control point spline, starting from the end of the arc created previously, enter a control point on the 
+                    left of the template curve, and enter the final point at the end of the template curve. Once done, you should have a curve with 1 control 
+                    point.<br>
+                    <br>
+                    With the dimensioning tool, set the height of the apline curve to be 17.25mm, and set the control point to be 7.5mm from the bottom of the 
+                    curve, 2mm to the left of the start point, and 0.35mm to the left of the end point.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_rim.png" alt="rook rim" height="250">
+                <p>
+                    Create a rectangle starting from the centerline above the long spline.<br>
+                    With the dimensioning tool, set the rectangle to be 3.2mm above the long spline.<br>
+                    Set the rectangle to be 10.5mm long and 2mm thick.<br>
+                    <br>
+                    Next, create a circle, with center point the midpoint of the right side of the rectangle just created and tangent to the top and bottom of 
+                    the rectangle.<br>
+                    <br>
+                    Create a 3-point arc starting from the end of the long spline curve to the bottom right corner of the rectangle above, setting the arc to 
+                    be tangent to the circle.
+                </p>
+                <br>
+                <img src="https://darryloch.github.io/EP1000/images/rook/rook_crown.png" alt="rook crown" width="300">
+                <p>
+                    For the final part of the sketch, create a rectangle, starting from the top right corner of the previous rectangle and attaching it to the 
+                    centerline. Use the dimensioning tool to set the top to be 50mm from the bottom of the sketch.
                 </p>
             </div>
         </div>
