@@ -14,7 +14,50 @@
                 </ul>
             </div>
             <div id="main">
-                
+                <h1>Arduino LED circuits</h1>
+                <br>
+                <h2>Button toggled LED</h2>
+                <img src="https://darryloch.github.io/EP1000/images/embedSystem/LED_systems/toggleLED.png" alt="7-segment display" height="400">
+                <h3>Code</h3>
+                <p>
+                    // C++ code<br>
+                    //<br>
+                    const int readButton = 4;<br>
+                    const int led = 8;<br>
+                    int buttonState, toggleAllow = 0, ledState = 0;<br>
+                    <br>
+                    void setup()<br>
+                    {<br>
+                    pinMode(LED_BUILTIN, OUTPUT);<br>
+                    pinMode(readButton, INPUT);<br>
+                    pinMode(led, OUTPUT);<br>
+                    }<br>
+                    <br>
+                    void loop()<br>
+                    {<br>
+                    digitalWrite(LED_BUILTIN, HIGH);<br>
+                    <br>
+                    buttonState = digitalRead(readButton);<br>
+                    <br>
+                    if (toggleAllow == 0 && buttonState == 1)<br>
+                    {<br>
+                        if (ledState == 0)<br>
+                        {<br>
+                        digitalWrite(led, 1);<br>
+                        ledState = 1;<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                        digitalWrite(led, 0);<br>
+                        ledState = 0;<br>
+                        }<br>
+                    }<br>
+                    <br>
+                    toggleAllow = buttonState;<br>
+                    }
+                </p>
+
+                <h2>Colour change LED</h2>
             </div>
         </div>
         <div id="footer">
