@@ -82,9 +82,11 @@
 
                 <h2>Modelling in Fusion 360</h2>
                 <iframe src="https://ichat3346.autodesk360.com/shares/public/SH35dfcQT936092f0e4394898860c14ed5e7?mode=embed" 
-                width="600" height="300" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                 <br>
                 <h3>Siren fan shroud</h3>
+                <iframe src="https://ichat3346.autodesk360.com/shares/public/SH35dfcQT936092f0e431ab75cd0f26b72e9?mode=embed" 
+                width="600" height="300" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                 <p>
                     Select the xy plane and create sketch. Draw 2 concentric circles, one of diameter 60mm, another of diameter 55mm. <br>
                     Finish sketch and extrude the space inbetween the 2 circles by 30mm.
@@ -98,7 +100,7 @@
                     <br>
                     Select the rectangle and extrude cut through all. <br>
                     <br>
-                    Create a circular pattern, selecting the extrude cut feature, with angular spacing set to full and quantity set to 3.
+                    Create a circular pattern, selecting the extrude cut feature, select the y-axis as pattern axis, with angular spacing set to full and quantity set to 3.
                 </p>
                 <p>
                     Create a new sketch on the offset workplane. Draw a vertical line as centerline again. <br>
@@ -109,7 +111,7 @@
                     <br>
                     Select the ractangle and extrude cut through all. <br>
                     <br>
-                    Create another circular pattern, selecting the second extrude cut feature, setting angular spacing to full and quantity to 8.
+                    Create another circular pattern, selecting the second extrude cut feature, select the y-axis as pattern axis, setting angular spacing to full and quantity to 8.
                 </p>
                 <p>
                     On the bottom face of the shroud, create a new sketch. <br>
@@ -120,12 +122,12 @@
                     <br>
                     Draw a diameter 4mm circle concentric to the 10mm circle. <br>
                     <br>
-                    Draw two parallel lines tangent to the dia 10mm circle from the left and right points of the circle and connect it to the outer diameter
-                    of the shroud. Finish the sketch once done<br>
+                    Draw two lines tangent to the dia 10mm circle from the left and right points of the circle and connect it to the outer diameter
+                    of the shroud. Constrain the lines to be parallel and symetrical about the vertical line connected to the circle. Finish the sketch once done<br>
                     <br>
                     Extrude join the feature by -2.5mm or to 2.5mm above the bottom of the shroud, selecting everything except the 4mm circle. <br>
                     <br>
-                    Create a circular pattern, select the feature, set angular spacing to full and quantity to 3.
+                    Create a circular pattern, select the feature, select the y-axis as pattern axis, select set angular spacing to full and quantity to 3.
                 </p>
                 <p>
                     Select the top face of the shroud and create sketch. <br>
@@ -139,23 +141,26 @@
                     draw a vertical line from the center of the circles to the dia 55mm circle, set as centerline. <br>
                     <br>
                     Draw 2 parallel vertical lines connecting from the dia 30mm circle to the dia 55mm cirlce, constrain the two lines to be symetrical 
-                    about the centerline. <br>
+                    about the centerline. Set the 2 lines to be 3mm apart. <br>
                     <br>
-                    Create a circular pattern, select the two parallel lines, set angular spacing to full and quantity to 6. <br>
+                    Create a circular pattern, select the two parallel lines, select circle center as center, set angular spacing to full and quantity to 6. <br>
                     <br>
-                    Extrude join the feature, selecting the spaces between the pairs of lines and circles., extrude by 1mm.
+                    Finish the sketch. Extrude join the feature, selecting the spaces between the pairs of lines and circles., extrude by 1mm.
                 </p>
                 <br>
 
                 <h3>Siren fan</h3>
+                <iframe src="https://ichat3346.autodesk360.com/shares/public/SH35dfcQT936092f0e4356f0fac8e1dd30b5?mode=embed" 
+                width="600" height="300" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
                 <p>
                     Create a offset workplane, select the xy plane as reference, off set by 1.5mm. <br>
                     <br>
                     Create a sketch on the offset plane. <br>
                     draw a circle of diameter 53mm, center on the the origin. Finish the sketch. <br>
                     <br>
-                    Extrude the circle by 3mm. <br>
-                    <br>
+                    Extrude the circle by 3mm.
+                </p>
+                <p>
                     Select the top face of the 53mm circle and create sketch. <br>
                     <br>
                     Draw a circle of 53mm diameter, center on the origin. <br>
@@ -173,24 +178,70 @@
                     <br>
                     Create an offset of the arc, with 2mm offset. <br>
                     <br>
-                    Draw a line from the center to the 53mm circle.
+                    Draw a line from the center to the 53mm circle, on the right side of the first arc.<br>
+                    Set the end point of the line on the 53mm circle to be 13mm apart from the end point of the arc on the 53mm circle.
                     <br>
                     Finish the sketch. Extrude join to height of 12mm, selecting the space between the arcs from the 30mm circle to the 53mm circle, 
-                    as well as the space from the between the 53mm circle and its offset from the line to the arc. <br>
+                    as well as the space from the between the 53mm circle and its offset from the line to the arcs. <br>
                     <br>
-                    Create a circular array, slecting the fan blade that have just been created.
+                    Create a circular array, selecting the fan blade that have just been created, select y-axis as axis of rotation, set angular spacing to full and quantity to 6. 
+                </p>
+                <p>
+                    Select the top of on of the fan blades and create new sketch. <br>
+                    <br>
+                    Draw two circles from the origin, one of 53mm diameter and another of 30mm diameter. <br>
+                    <br>
+                    Extrude join the space between the two circles to a height of 1mm.
+                </p>
+                <p>
+                    Select the top of the extruded layer and create new sketch. <br>
+                    <br>
+                    Create an offset of the 53mm circle of the sketch plane, offset by -3mm. <br>
+                    <br>
+                    Draw a vertical line going through circle center and set as centerline. <br>
+                    <br>
+                    Create a 3-point arc. <br>
+                    Connect the first point to the origin or center of the circles. <br>
+                    connect the second point to the top-right of the 53mm circle. <br>
+                    Place the last point such that the arc is tangent to the centerline. <br>
+                    Set the radius of the arc to be 40mm. <br>
+                    <br>
+                    Create an offset of the arc, with 3mm offset. <br>
+                    <br>
+                    Draw a line from the center to the 53mm circle, on the right side of the first arc.<br>
+                    Set the end point of the line on the 53mm circle to be 10mm apart from the end point of the arc on the 53mm circle. <br>
+                    <br>
+                    Finish the sketch. Extrude join to height of 11mm, selecting the space between the arcs from the 30mm circle to the 53mm circle, 
+                    as well as the space from the between the 53mm circle and its offset from the line to the arcs. <br>
+                    <br>
+                    Create a circular array, selecting the second layer of the fan blade that have just been created, select y-axis as axis of rotation, set angular spacing to full 
+                    and quantity to 8. 
+                </p>
+                <p>
+                    Flip to the bottom of the fan and create a new sketch on the bottom face. <br>
+                    <br>
+                    Draw a circle of 2mm diameter from the center. <br>
+                    Create an offset the circle, offset by 2.5mm. <br>
+                    <br>
+                    Extrude join the space between the two circles to a height of 20mm. <br>
+                    <br>
+                </p>
+
+                <h3>Box Housing</h3>
+                <p>
+
                 </p>
 
                 <h2>Reflection</h2>
                 <h3>what went well</h3>
                 <p>
-                    1. Managed to print and laser-cut out the parts succesfully <br>
+                    1. Managed to print and laser-cut out the parts succesfully without much difficulty<br>
                     2. Successfully create a fully working circuit on TinkerCAD.
                 </p>
 
                 <h3>What went wrong</h3>
                 <p>
-                    1. Could not upload the code into the actual arduino board <br>
+                    1. Had difficulty uploading the code onto the arduino board and getting the circuit to work<br>
                     2. Siren fan could not fit onto the motor at first, tried to melt the hole bigger and made the fan not fit straight on the motor. Now the fan would keep colliding with<br>
                        fan shroud and the lid of the box. 
                 </p>
