@@ -232,9 +232,52 @@
                     <br>
                 </p>
 
-                <h3>Box Housing</h3>
+                <h2>Circuit Design and Code</h2>
+                <img src="https://darryloch.github.io/EP1000/images/wakeup-inator/WakeUp-inator_circuit_design.png" alt="Wake Up!-inator " height="400">
+                <h3>Code</h3>
                 <p>
-
+                    const int pinButton = 12, pinSensor = 8, motor = 13;<br>
+                    int sensorState, buttonState, toggleMotor;<br>
+                    unsigned long timeElapsed, previousTime = 0;<br>
+                    const double interval = 3000;<br>
+                    <br>
+                    void setup() <br>
+                    {<br>
+                    pinMode(LED_BUILTIN, OUTPUT);<br>
+                    pinMode(motor, OUTPUT);<br>
+                    pinMode(sensorState, INPUT);<br>
+                    pinMode(buttonState, INPUT); <br>
+                    } <br>
+                    <br>
+                    void loop() <br>
+                    { <br>
+                    timeElapsed = millis(); <br>
+                    //millis() counts the time since system is turned on, timeElapsed saves the value <br>
+                    <br>
+                    pinMode(LED_BUILTIN, HIGH);//built in LED is on to indicate system is running <br>
+                    <br>
+                    buttonState = digitalRead(pinButton); //read if button is pressed(high)  <br>
+                    sensorState = digitalRead(pinSensor); //reads PIR sensor high or low <br>
+                    <br>
+                    if (sensorState == 1) <br>
+                        previousTime = timeElapsed; <br>
+                    //while movement is detected, start point of timer continuously reset <br>
+                    <br>
+                    if (sensorState == 0 && (timeElapsed - previousTime > interval)) <br>
+                        toggleMotor = 1;<br>
+                    //if no movement detected for a designated time, motor is set to turn on <br>
+                    <br>
+                    if (buttonState == 1) <br>
+                    { <br>
+                        previousTime = timeElapsed;	//saves the current system time so that the timer is reset <br>
+                        toggleMotor = 0; 			//motor is set to turn off <br>
+                    } <br>
+                    <br>
+                    if (toggleMotor == 1) //commands arduino to supply power to motor  <br>
+                        digitalWrite(motor, HIGH); <br>
+                    else <br>
+                        digitalWrite(motor, LOW); <br>
+                    }
                 </p>
 
                 <h2>Reflection</h2>
