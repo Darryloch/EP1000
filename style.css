@@ -8,7 +8,7 @@ a{
 
 #container{
     background-color: #eeeeee;
-    width: 1400px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -36,7 +36,7 @@ a{
 }
 
 #main{
-    width: 1176px;
+    width: 1075px;
     float: right;
     background-color: #fefefe;
     padding: 0px 5px 10px 20px;
