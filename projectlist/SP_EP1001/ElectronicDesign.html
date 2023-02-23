@@ -14,7 +14,51 @@
                 </ul>
             </div>
             <div id="main">
+                <h1>Electronics Design</h1>
+                <p>
+                    This si how I design PCBs in my SP EP1001 module.<br>
+                    I used Autodesk Fusion 360 and GIMP softwares for this.
+                </p>
                 
+                <h3>Libraries</h3>
+                <p>Electronics design libraries that I used can be found here</p>
+                <a href="https://skeatz.github.io/Further-DF-and-Prototyping/files/04-electronics-design.html"></a>
+
+                <h3>Fusion 360</h3>
+                <p>
+                    Create new electronics design in fusion and create new schematic diagram. Add the downloaded libraries from the library manager 
+                    or if unable to do so, drag and drop into the libraries folder of Fusion 360 in the computer file explorer. Make sure the libraries 
+                    are activated in the library manager. <br>
+                    <br>
+                    Next, place all the needed components using the "Place components" tool. Search for the components by entering key-words or components 
+                    code in the search bar. Arrange all the components and connect them with the "Net" tool.<br>
+                    <br>
+                    Once the circuit is completed, switch to PCB document to bring you to a space with all the components and their footprints. 
+                    Before anything else, click on "DRC" under the "Rules DRC/ERC" tab. Input the line width and clearance as 18 mils and apply.
+                    <br>
+                    Arrange all the components neatly according to liking and how they can be most easily connected, then connect all the components with the 
+                    routing tool. For convenience, I used the auto-router tool to fast connect everything first, I then improved the connections from there.
+                    Use the error checker tool to ensure you ahve everything properly connected<br>
+                    <br>
+                    Once everything is connected, it's time to create the PCB outline. Select the "Board outline" tool, then select the "milling" layer, then 
+                    draw out a desired board shape around the circuit. Ensure that the outline is fully closed.<br>
+                    <br>
+                    Once the PCB design is fully completed, it's time to export it into images. Since Fusion 360 does not have a function for that, you have to
+                    input a command line. The command is: <br>
+                    export image monochrome &lt;drive:\path\filename.png&gt; &lt;resolution&gt; <br>
+                    e.g. export image monochrome c:\ep10001\updi_traces.png 1000<br>
+                    <br>
+                    Under display layers, select display layers, disable everything except the top and pads layer and export image. this will be the PCB traces. <br>
+                    Next, disable everything except for the milling layer and export image again, this will be the PCB outline.
+                </p>
+
+                <h3>GIMP</h3>
+                <P>
+                    Open the images in GIMP, crop the design image out to an appropriate size and fill in the inside spaces to white and leave the outside spaces as black.<br>
+                    The white spaces are the parts left untouched during milling and the the outline of the white spaces in the black spaces are cut during PCB milling.
+                </P>
+
+                <p>Now you have the images ready to carry out production.</p>
             </div>
         </div>
         <div id="footer">
