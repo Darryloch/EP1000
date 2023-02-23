@@ -39,9 +39,6 @@
                     </tr>
                 </table>          
                 <br>
-                <p>
-                    Traces are for the PCB circuitry, Outline is the for the profile of the board to be cut out.
-                </p>
                 
                 <h3>Milling G-code</h3>
                 <p>I used Mr. Steven Chew's "mod" program to get milling g-codes needed to produce the boards</p>
@@ -55,10 +52,41 @@
                 </p>
 
                 <h3>PCB Milling</h3>
+                <p>Milling of the PCB is done using the Stepcraft 420 2D Router</p>
+
                 <img src="https://darryloch.github.io/EP1001/images/ElectronicProduction/tracecutter.jpg" alt="Taces Cutting tool" width="350">
                 <img src="https://darryloch.github.io/EP1001/images/ElectronicProduction/outlinecutter.jpg" alt="outline Cutting tool" width="350">
-                <p>The tool on the </p>
+                <p>The angled cutter is used for milling the PCB traces, the thin cutter is for milling the outline of the PCB</p>
+
+                <p>
+                    Take a plain copper PCB board and stick it to the Stepcraft machining bed with some double-sided tape, reinforce with masking tape if
+                    neccessary. The board should not be able to move around easily.<br>
+                    <br>
+                    In the Stepcraft software, load the g-code file for the traces first. Set the Z 0 point of the machine on top of the copper board, then set
+                    the X and Y 0 points accordingly to mill over an empty spot on the copper board. Move the cutter around and check with the toolpath location 
+                    in the software to make sure you are milling in the correct spot.<br>
+                    <br>
+                    Once set-up is done, click cycle start to begin milling
+                </p>
+                <p>
+                    After milling the Traces, load the g-code for the PCB outline and repeat the process, but without overiding the X and Y 0 coordinates.
+                </p>
                 
+                <h3>Post-processing</h3>
+                <p>
+                    After milling, you should have a rough-looking PCB board. <br>
+                    <br>
+                    Sand down the copper surface of the PCB until it's flat and smooth out any other rough edges or surfaces.<br>
+                    <br>
+                    Next, with a pen-knife, carefully shave out any pieces of excess copper inbetween the PCB traces to ensure there are no short circuits
+                    and to make everything more cleanly separated.
+                </p>
+
+                <h3>Soldering</h3>
+                <p>
+                    All that is left to do now is to solder all the surface-mount parts onto the PCB, you can also add some sodler to parts you don't want
+                    to oxidise or to thicken the area a bit.
+                </p>
             </div>
         </div>
         <div id="footer">
