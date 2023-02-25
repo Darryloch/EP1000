@@ -14,7 +14,67 @@
                 </ul>
             </div>
             <div id="main">
+                <h1>2D CNC Machining</h1>
+                <p>This is how I did the large format 2D CNC machining in the SP EP1001 module </p>
+                <p>In this assignment, I made an earphone/headphone hanger</p>
+
+                <h3>3D model</h3>
+                <iframe src="https://ichat3346.autodesk360.com/shares/public/SH35dfcQT936092f0e4367e218d633079d83?mode=embed" width="640" height="480" 
+                allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                <P>
+                    This is the 3D model I designed for the hanger. When making a 3D model, remember to take note of the exact thickness of the wood that you 
+                    are using and base the design around that. Make sure the wood is measured beforehand, and best that the 3D model can be edited easily should
+                    there be any changes to the thickness used.
+                </P>
+                <p>
+                    Next, create and save the profile sketches of all the parts of the product as a DXF drawing.
+                </p>
+
+                <h3>VCarve Pro</h3>
+                <p>
+                    Create a new file in VCarve Pro and set an appropriate wood area and set wood thickness according to the wood used. 
+                    Upload and arrangerrange all the drawings, basing them on the bottome left corner of the drawing sheet at X and Y 0, putting them close 
+                    together so as to not waste material later.<br>
+                    <br>
+                    Use the close vectors tool to check for any open profiles and close them. Add fillets to any sharp inside corners to 
+                    accomodate for the cutting tool radius. Add dogbone fillet to inside corners of any intersecting/joining sections so that the
+                    joining parts can sit all the way into the joint. 
+                </p>
+                <p>
+                    After drawing set-up is done, switch to toolpath programming. Select the tool operation and select the profiles in the drawing to be used
+                    in the operation. If there are any pockets, do the pocketing first. <br>
+                    In cutting through operations, input cut depth of about 0.5mm more than the thickness of the wood. <br>
+                    Select the correct cutter to be be used. <br>
+                    Add tabs so that all loose pieces remain held steady amd strongly during cutting. This is also to prevent loose pieces from being picked 
+                    up and shot out. Better to add tabs manually by clicking the spots on 
+                    the drawing profiles you want the tabs. Make sure to add enough tabs to ensure stabilty even if 1 or 2 tabs end up failing. <br>
+                    Toggle on ramping, selecting linear or zig-zag according to what the cutting profile allows. <br>
+                    <br>
+                    Once all the settings are correct, calculate the toolpath. If there are multiple operations, switch back to 2D view and repeat the 
+                    process. <br>
+                    After all toolpaths are calculated, go to 3D view and preview all the toolpaths to ensure that the operations and settings are correct. <br>
+                    <br>
+                    save the toolpath g-code
+                </p>
                 
+                <h3>Machining on te flatbed router</h3>
+                <p>
+                    On the cutting machine, place and align the stock material onto the cutting bed. Screw down the material around the cuttting area
+                    to ensure that the material is completely flat during all the operations.
+                </p>
+
+                <p> <b>NOTE: When doing anything onthe machine, keep a hand on the emergency stop in case anything goes wrong.</b> </p>
+
+                <p>
+                    Upload the g-code file into the machine software. Ensure that the profiles are correct and that they are correctly positioned from the 0 point. <br>
+                    <br>
+                    Set the Z axis with the gauge and select and appropriate X and Y 0 point on the stock material. Once done, wear ear and eye protection, 
+                    turn on the vacuum, and start the cutting operations. <br>
+                    <br>
+                    After, the machgine is done cutting, move the cutting head away from the workpieces and cut them out from the tabs with a chisel and mallet. <br>
+                </p>
+
+                <h3>Post-processing</h3>
             </div>
         </div>
         <div id="footer">
