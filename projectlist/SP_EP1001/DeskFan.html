@@ -14,7 +14,115 @@
                 </ul>
             </div>
             <div id="main">
-                
+                <h1>Desk Fan</h1>
+                <p>This is my module project for the SP EP1001 module</p>
+                <iframe src="https://ichat3346.autodesk360.com/shares/public/SH35dfcQT936092f0e43e02fb6aefa57fd44?mode=embed" 
+                width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                <br>
+                <h3>PCB components used (surface mounted)</h3>
+                <table>
+                    <tr>
+                        <td>ATTiny412</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>ASM1117 Voltage regulator, 5V</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>A09T mosfet</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                         <td>10µF unpolarised capacitor</td>
+                         <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>0.1µF unpolarised capacitor</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1kΩ resistor</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Diode</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Push button</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1x2 Pin header</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1x3 Pin header</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+
+                <h3>Circut Design in TinkerCad</h3>
+                <a href="https://www.tinkercad.com/things/8aNhmvI9sUe">ThinkCAD link</a>
+                <img src="https://darryloch.github.io/EP1001/images/DeskFan/TinkerCADCircuit.png" alt="TinkerCAD circuit">
+                <h4>Code</h4>
+                <p>
+                    // C++ code <br>
+                    //<br>
+                    const int button = 4;<br>
+                    int motorSpeed = 0;<br>
+                    bool buttonState, toggleAllow = 0;<br>
+                    <br>
+                    void setup()<br>
+                    {<br>
+                    pinMode(0, OUTPUT);<br>
+                    pinMode(button, INPUT);<br>
+                    }<br>
+                    <br>
+                    void loop()<br>
+                    {<br>
+                    //analogWrite(3, 255*0.6);	// output 5V<br>
+                    <br>
+                    buttonState = digitalRead(button);<br>
+                    <br>
+                    if (toggleAllow == 0 && buttonState == 1) {<br>
+                        motorSpeed++;<br>
+                        <br>
+                        if(motorSpeed > 3)<br>
+                        motorSpeed = 0;<br>
+                    }<br>
+                    <br>
+                    switch (motorSpeed){<br>
+                        case 1:<br>
+                        analogWrite(0, 255*0.15);<br>
+                        break;<br>
+                        <br>
+                        case 2:<br>
+                        analogWrite(0,255*0.4);<br>
+                        break;<br>
+                        <br>
+                        case 3:<br>
+                        analogWrite(0, 255*0.65);<br>
+                        break;<br>
+                        <br>
+                        default:<br>
+                        analogWrite(0, 0);<br>
+                    }<br>
+                    <br>
+                    toggleAllow = buttonState;<br>
+                    }<br>
+                </p>
+
+                <h3>PCB Design</h3>
+                <tr>
+                    <td><img src="https://darryloch.github.io/EP1001/images/DeskFan/CircuitSchematic.png" alt="PCB Schematic"></td>
+                    <td><img src="https://darryloch.github.io/EP1001/images/DeskFan/CircuitDesign.png" alt="PCB design"></td>
+                </tr>
+                <tr>
+                    <td>PCB Schematic</td>
+                    <td>PCB Design</td>
+                </tr>
             </div>
         </div>
         <div id="footer">
